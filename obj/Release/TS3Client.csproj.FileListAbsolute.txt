@@ -1,0 +1,5 @@
+C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\bin\Release\TS3Client.dll
+C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\bin\Release\BouncyCastle.Crypto.dll
+C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\bin\Release\Heijden.Dns.dll
+C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Release\TS3Client.csproj.CoreCompileInputs.cache
+C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Release\TS3Client.dll

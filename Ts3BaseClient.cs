@@ -272,20 +272,6 @@ namespace TS3Client
 			SendCommand<ResponseVoid>(cmd);
 		}
 
-		public void ChannelCreate(string name, string namePhonetic = null, string password = null, int neededTP = 0) {
-			var cmd = new Ts3Command("channelcreate", new List<ICommandPart> {
-				new CommandParameter("channel_name", name)
-			});
-			if (namePhonetic != null)
-				cmd.AppendParameter(new CommandParameter("channel_name_phonetic", namePhonetic));
-			if (password != null)
-				cmd.AppendParameter(new CommandParameter("channel_password",
-					ClientType == ClientType.Full ? Full.Ts3Crypt.HashPassword(password) : password));
-			if (neededTP != 0)
-				cmd.AppendParameter(new CommandParameter("channel_needed_talk_power", neededTP));
-			SendCommand<ResponseVoid>(cmd);
-		}
-
 		// Base Stuff for splitted up commands
 		// Some commands behave differently on query and full client
 

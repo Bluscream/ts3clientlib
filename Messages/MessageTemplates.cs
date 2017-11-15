@@ -175,34 +175,38 @@ namespace TS3Client.Messages
 
 		public void SetField(string name, string value)
 		{
+
 			switch(name)
 			{
-				case "cid": ChannelId = CommandDeserializer.DeserializeUInt64(value); break;
-				case "invokerid": InvokerId = CommandDeserializer.DeserializeUInt16(value); break;
-				case "invokername": InvokerName = CommandDeserializer.DeserializeString(value); break;
-				case "invokeruid": InvokerUid = CommandDeserializer.DeserializeString(value); break;
-				case "channel_order": Order = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_name": Name = CommandDeserializer.DeserializeString(value); break;
-				case "channel_topic": Topic = CommandDeserializer.DeserializeString(value); break;
-				case "channel_flag_default": IsDefaultChannel = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_flag_password": HasPassword = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_flag_permanent": IsPermanent = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_flag_semi_permanent": IsSemiPermanent = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_codec": Codec = CommandDeserializer.DeserializeEnum<Codec>(value); break;
-				case "channel_codec_quality": CodecQuality = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_needed_talk_power": NeededTalkPower = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_icon_id": IconId = CommandDeserializer.DeserializeInt64(value); break;
-				case "channel_maxclients": MaxClients = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_maxfamilyclients": MaxFamilyClients = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_codec_latency_factor": CodecLatencyFactor = CommandDeserializer.DeserializeInt32(value); break;
-				case "channel_codec_is_unencrypted": IsUnencrypted = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_delete_delay": DeleteDelay = CommandDeserializer.DeserializeTimeSpanSeconds(value); break;
-				case "channel_flag_maxclients_unlimited": IsMaxClientsUnlimited = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_flag_maxfamilyclients_unlimited": IsMaxFamilyClientsUnlimited = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_flag_maxfamilyclients_inherited": IsMaxFamilyClientsInherited = CommandDeserializer.DeserializeBool(value); break;
-				case "channel_name_phonetic": PhoneticName = CommandDeserializer.DeserializeString(value); break;
-				case "reasonid": Reason = CommandDeserializer.DeserializeEnum<MoveReason>(value); break;
+
+			case "cid": ChannelId = CommandDeserializer.DeserializeUInt64(value); break;
+			case "invokerid": InvokerId = CommandDeserializer.DeserializeUInt16(value); break;
+			case "invokername": InvokerName = CommandDeserializer.DeserializeString(value); break;
+			case "invokeruid": InvokerUid = CommandDeserializer.DeserializeString(value); break;
+			case "channel_order": Order = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_name": Name = CommandDeserializer.DeserializeString(value); break;
+			case "channel_topic": Topic = CommandDeserializer.DeserializeString(value); break;
+			case "channel_flag_default": IsDefaultChannel = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_flag_password": HasPassword = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_flag_permanent": IsPermanent = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_flag_semi_permanent": IsSemiPermanent = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_codec": Codec = CommandDeserializer.DeserializeEnum<Codec>(value); break;
+			case "channel_codec_quality": CodecQuality = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_needed_talk_power": NeededTalkPower = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_icon_id": IconId = CommandDeserializer.DeserializeInt64(value); break;
+			case "channel_maxclients": MaxClients = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_maxfamilyclients": MaxFamilyClients = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_codec_latency_factor": CodecLatencyFactor = CommandDeserializer.DeserializeInt32(value); break;
+			case "channel_codec_is_unencrypted": IsUnencrypted = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_delete_delay": DeleteDelay = CommandDeserializer.DeserializeTimeSpanSeconds(value); break;
+			case "channel_flag_maxclients_unlimited": IsMaxClientsUnlimited = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_flag_maxfamilyclients_unlimited": IsMaxFamilyClientsUnlimited = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_flag_maxfamilyclients_inherited": IsMaxFamilyClientsInherited = CommandDeserializer.DeserializeBool(value); break;
+			case "channel_name_phonetic": PhoneticName = CommandDeserializer.DeserializeString(value); break;
+			case "reasonid": Reason = CommandDeserializer.DeserializeEnum<MoveReason>(value); break;
+			
 			}
+
 		}
 	}
 

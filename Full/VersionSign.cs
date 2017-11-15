@@ -7,14 +7,16 @@
 // You should have received a copy of the Open Software License along with this
 // program. If not, see <https://opensource.org/licenses/OSL-3.0>.
 
-namespace TS3Client.Full {
+namespace TS3Client.Full
+{
 	using System;
 
 	/// <summary>
 	/// Describes a triple of version, plattform and a crytographical signature (usually distributed by "TeamSpeak Systems").
 	/// Each triple has to match and is not interchangeable with other triple parts.
 	/// </summary>
-	public class VersionSign {
+	public class VersionSign
+	{
 		private static readonly string[] Plattforms = { null, "Windows", "Linux", "OS X", "Android", "iOS" };
 
 		public string Sign { get; }
@@ -22,7 +24,8 @@ namespace TS3Client.Full {
 		public ClientPlattform Plattform { get; }
 		public string PlattformName { get; }
 
-		public VersionSign(string name, ClientPlattform plattform, string sign) {
+		public VersionSign(string name, ClientPlattform plattform, string sign)
+		{
 			if (plattform == ClientPlattform.Other)
 				throw new ArgumentException(nameof(plattform));
 			Name = name;
@@ -31,7 +34,8 @@ namespace TS3Client.Full {
 			PlattformName = Plattforms[(int)plattform];
 		}
 
-		public VersionSign(string name, string plattform, string sign) {
+		public VersionSign(string name, string plattform, string sign)
+		{
 			Name = name;
 			Sign = sign;
 			Plattform = ClientPlattform.Other;
@@ -72,7 +76,8 @@ namespace TS3Client.Full {
 			= new VersionSign("3.?.? [Build: 5680278000]", ClientPlattform.Ios, "XrAf+Buq6Eb0ehEW/niFp06YX+nGGOS0Ke4MoUBzn+cX9q6G5C0A/d5XtgcNMe8r9jJgV/adIYVpsGS3pVlSAA==");
 	}
 
-	public enum ClientPlattform {
+	public enum ClientPlattform
+	{
 		Other = 0,
 		Windows,
 		Linux,

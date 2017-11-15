@@ -16,7 +16,7 @@ namespace TS3Client.Commands
 	using System.Linq;
 	using KVEnu = System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>;
 
-	internal static class CommandDeserializer
+	public static class CommandDeserializer
 	{
 		// data to notification
 		public static IEnumerable<INotification> GenerateNotification(string lineDataPart, NotificationType ntfyType)

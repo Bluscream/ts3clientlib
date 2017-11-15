@@ -18,8 +18,8 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;COLOG,COLOG_TIMEOUT</DefineConstants>
+    <OutputPath>..\..\..\..\..\..\Bots\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;COLOG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
@@ -28,13 +28,15 @@
     <CodeAnalysisRuleSet />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet />
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -101,7 +103,6 @@
     <None Include="ts3protocol.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Full\VersionSigns.txt" />
     <Content Include="Messages\MessageDeclarations.txt" />
     <Content Include="Messages\MessageTemplates.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
