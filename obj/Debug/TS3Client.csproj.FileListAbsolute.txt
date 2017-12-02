@@ -4,3 +4,7 @@ C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Debug\TS3Client.csproj.Cor
 C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Debug\TS3Client.dll
 C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Debug\TS3Client.pdb
 C:\Users\blusc\source\repos\TS3AudioBot\TS3Client\obj\Debug\TS3Client.csprojResolveAssemblyReference.cache
+C:\Users\blusc\source\repos\TS3Client\obj\Debug\TS3Client.csprojResolveAssemblyReference.cache
+C:\Users\blusc\source\repos\TS3Client\obj\Debug\TS3Client.csproj.CoreCompileInputs.cache
+C:\Users\blusc\source\repos\TS3Client\obj\Debug\TS3Client.dll
+C:\Users\blusc\source\repos\TS3Client\obj\Debug\TS3Client.pdb
